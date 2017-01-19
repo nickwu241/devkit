@@ -5,7 +5,6 @@ set nocompatible
 filetype off
 
 " TODO: Load plugins here (pathogen or vundle)
-execute pathogen#infect()
 
 " Turn on syntax highlighting
 syntax on
@@ -14,7 +13,7 @@ syntax on
 filetype plugin indent on
 
 " TODO: Pick a leader key
-let mapleader = ","
+" let mapleader = ","
 
 " Security
 set modelines=0
@@ -92,10 +91,12 @@ set listchars=tab:▸\ ,eol:¬
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 " Color scheme (terminal)
+
+" set background=dark
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
+" colorscheme solarized
+
 set t_Co=256
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-" put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
-" in ~/.vim/colors/ and uncomment:
-colorscheme solarized
+set background=light
+colorscheme PaperColor
