@@ -5,6 +5,14 @@ set nocompatible
 filetype off
 
 " TODO: Load plugins here (pathogen or vundle)
+" execute pathogen#infect()
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+call vundle#end()
 
 " Turn on syntax highlighting
 syntax on
@@ -13,7 +21,7 @@ syntax on
 filetype plugin indent on
 
 " TODO: Pick a leader key
-" let mapleader = ","
+let mapleader = ","
 
 " Security
 set modelines=0
