@@ -1,5 +1,36 @@
+""" SETUP INSTRUCTIONS
+" Run--- git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" Inside vim run--- :PluginInstall
+"
+
+""" SPECIFIC OPTIONS
+" source ~/vim/vimrcspecific
+
+""" BASIC VIMRC
+
 " Don't try to be vi compatible
 set nocompatible
+
+" TODO: Pick a leader key
+let mapleader = ","
+
+function! RemoveTrailingSpaces()
+  %s/ \+$//g
+endfunction
+ 
+function! TabsOn(size)
+  let &tabstop=a:size
+  let &shiftwidth=a:size
+  let &softtabstop=a:size
+  set noexpandtab
+endfunction
+
+function! TabsOff(size)
+  let &tabstop=a:size
+  let &shiftwidth=a:size
+  let &softtabstop=a:size
+  set expandtab
+endfunction
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -19,9 +50,6 @@ syntax on
 
 " For plugins to load correctly
 filetype plugin indent on
-
-" TODO: Pick a leader key
-let mapleader = ","
 
 " Security
 set modelines=0
