@@ -1,12 +1,10 @@
 """ SETUP INSTRUCTIONS
-" Run--- git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" Inside vim run--- :PluginInstall
-"
+" look at setup.sh
 
 """ SPECIFIC OPTIONS
-" source ~/vim/vimrcspecific
+source ~/specific.vim
 
-""" BASIC VIMRC
+""" Otherwise this is a basic .vimrc
 
 " Don't try to be vi compatible
 set nocompatible
@@ -17,7 +15,7 @@ let mapleader = ","
 function! RemoveTrailingSpaces()
   %s/ \+$//g
 endfunction
- 
+
 function! TabsOn(size)
   let &tabstop=a:size
   let &shiftwidth=a:size
