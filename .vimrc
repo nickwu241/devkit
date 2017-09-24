@@ -1,8 +1,5 @@
-""" SETUP INSTRUCTIONS
-" look at setup.sh
-
 """ SPECIFIC OPTIONS
-source ~/specific.vim
+source ~/.vim/specific.vim
 
 """ Otherwise this is a basic .vimrc
 
