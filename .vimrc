@@ -1,8 +1,3 @@
-""" SPECIFIC OPTIONS
-source ~/.vim/specific.vim
-
-""" Otherwise this is a basic .vimrc
-
 " Don't try to be vi compatible
 set nocompatible
 
@@ -125,4 +120,7 @@ set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 colorscheme solarized
+
+""" SPECIFIC OPTIONS
+source ~/.vim/specific.vim
 
