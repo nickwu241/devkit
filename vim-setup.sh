@@ -1,4 +1,6 @@
 #!/bin/bash
+set -eu
+
 echo '[VIM SETUP] Starting...'
 
 if [ -f ~/.vimrc ]; then
@@ -6,18 +8,19 @@ if [ -f ~/.vimrc ]; then
     exit 1
 fi
 
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+
+cd ~/.vim/bundle/Vundle.vim && git pull origin master
+
 if [ ! -f ~/.vim/specific.vim ]; then
     mkdir -p ~/.vim
     touch ~/.vim/specific.vim
     echo '[VIM SETUP] created ~/.vim/specific.vim'
 fi
 
-cd ~/devkit
-cp -f .vimrc ~/
-mkdir -p .vim/colors
-mkdir -p .vim/autoload
-cp -rf .vim/colors/ ~/.vim/colors
-cp -rf .vim/autoload/ ~/.vim/autoload
+cd ~/devkit && cp .vimrc ~/
 vim +PluginInstall +qall
 
 echo '[VIM SETUP] Completed'

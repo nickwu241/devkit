@@ -27,10 +27,11 @@ filetype off
 
 " TODO: Load plugins here (pathogen or vundle)
 " execute pathogen#infect()
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
@@ -115,10 +116,7 @@ set listchars=tab:▸\ ,eol:¬
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 " Color scheme (terminal)
-
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
 colorscheme solarized
 
 """ SPECIFIC OPTIONS

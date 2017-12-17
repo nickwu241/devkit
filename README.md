@@ -1,4 +1,8 @@
 # devkit
+To clone this repo:
+```bash
+git clone https://github.com/nickwu241/devkit.git ~/devkit
+```
 
 ### Git
 Requires `git` to be installed.
@@ -20,9 +24,9 @@ git config --global alias.pub '!git push origin $(git rev-parse --abbrev-ref HEA
 ```
 
 ### Vim
-Requires `vim` to be installed.
+Requires `git` and `vim` to be installed.
 ```bash
-git clone https://github.com/nickwu241/dev_util.git ~/devkit
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cd ~/devkit && ./vim-setup.sh
+# assuming you've already cloned this repository
+cd ~/devkit 
+./vim-setup.sh
 ```
