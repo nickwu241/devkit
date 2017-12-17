@@ -20,7 +20,7 @@ if [ ! -f ~/.vim/specific.vim ]; then
     echo '[VIM SETUP] created ~/.vim/specific.vim'
 fi
 
-cd ~/devkit && cp .vimrc ~/
+cd ~ && ln -s ~/devkit/.vimrc
 vim +PluginInstall +qall
 
 echo '[VIM SETUP] Completed'
