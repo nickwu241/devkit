@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -eu
+REPO_BASE=${PWD}
 
 echo '[VIM SETUP] Starting...'
 
@@ -20,7 +21,7 @@ if [ ! -f ~/.vim/specific.vim ]; then
     echo '[VIM SETUP] created ~/.vim/specific.vim'
 fi
 
-cd ~ && ln -s ~/devkit/.vimrc
+cd ~ && ln -s ${REPO_BASE}/.vimrc
 vim +PluginInstall +qall
 
 echo '[VIM SETUP] Completed'
