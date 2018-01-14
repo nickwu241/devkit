@@ -19,6 +19,7 @@ git config --global alias.co checkout
 git config --global alias.st status
 git config --global alias.cm 'commit -m'
 git config --global alias.sl 'log --oneline -n 10'
+git config --global alias.dc 'diff --cached'
 git config --global alias.slo 'log --oneline'
 git config --global alias.pub '!git push origin $(git rev-parse --abbrev-ref HEAD)'
 ```
