@@ -8,7 +8,7 @@ git clone https://github.com/nickwu241/devkit.git
 Requires `git` to be installed.
 ```shell
 # change these values as needed
-git config --global user.name "Nicholas Wu"
+git config --global user.name "Nick Wu"
 git config --global user.email nickwu241@gmail.com
 
 git config --global core.editor vim
@@ -30,9 +30,10 @@ Requires `git` and `vim` to be installed.
 ./vim-setup.sh
 ```
 
-### Homebrew & packages (macOS)
+### macOS
 ```shell
-cd macos && ./brew-setup.sh
+./macos/sys-defaults.sh
+./macos/brew-setup.sh
 ```
 
 ### Other

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -eu
 
 # Install Homebrew if not installed
@@ -10,6 +10,6 @@ brew update
 # Upgrade formulaes that are already installed
 brew upgrade
 
-# Install using Brewfile 
-brew bundle
+# Install using Brewfile
+brew bundle --file="$(dirname "$0")/Brewfile"
 
