@@ -33,7 +33,7 @@ Requires `git` and `vim` to be installed.
 
 ### macOS
 ```shell
-./macos/sys-defaults.sh
+./macos/defaults.sh
 ./macos/brew-setup.sh
 ```
 
