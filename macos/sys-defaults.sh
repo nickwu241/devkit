@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eu
+set -euo pipefail
 
 ### macOS specific setup inspired by https://mths.be/macos
 # Close any open System Preferences panes, to prevent them from overriding
