@@ -14,9 +14,11 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Set a blazingly fast keyboard repeat rate
+# Set a fast keyboard repeat rate, note:
+# min KeyRepeat from UI is 2
+# min InitialKeyRepeat from UI is 15
 defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -48,6 +50,7 @@ defaults write com.apple.dock autohide -bool true
 # 10: Put display to sleep
 # 11: Launchpad
 # 12: Notification Center
+
 # Top left screen corner → Show application windows
 defaults write com.apple.dock wvous-tl-corner -int 3
 defaults write com.apple.dock wvous-tl-modifier -int 0
