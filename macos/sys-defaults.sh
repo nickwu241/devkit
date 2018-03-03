@@ -15,8 +15,8 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Set a fast keyboard repeat rate, note:
-# min KeyRepeat from UI is 2
-# min InitialKeyRepeat from UI is 15
+# min KeyRepeat from System Preferences UI is 2
+# min InitialKeyRepeat System Preferences from UI is 15
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
