@@ -12,4 +12,3 @@ brew upgrade
 
 # Install using Brewfile
 brew bundle --file="$(dirname "$0")/Brewfile"
-

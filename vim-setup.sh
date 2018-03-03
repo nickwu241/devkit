@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-set -eu
-REPO_BASE=${PWD}
+#!/bin/bash
+set -euo pipefail
+REPO_BASE="$(dirname "$0")"
 
 echo '[VIM SETUP] Starting...'
 
@@ -25,4 +25,3 @@ cd ~ && ln -s ${REPO_BASE}/.vimrc
 vim +PluginInstall +qall
 
 echo '[VIM SETUP] Completed'
-
