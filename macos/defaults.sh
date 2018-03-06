@@ -24,6 +24,9 @@ defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2.5
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+# Enable key repeats when holding down key
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
