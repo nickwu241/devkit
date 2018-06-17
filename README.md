@@ -23,6 +23,7 @@ git config --global alias.sl 'log --oneline -n 10'
 git config --global alias.slo 'log --oneline'
 git config --global alias.diffc 'diff --cached'
 git config --global alias.pub '!git push origin $(git rev-parse --abbrev-ref HEAD)'
+git config --global alias.brc '!git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 ```
 
 ### Vim
