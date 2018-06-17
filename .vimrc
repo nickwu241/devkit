@@ -48,6 +48,9 @@ set modelines=0
 " Show line numbers
 set number
 
+" Show relative line numbers
+set relativenumber
+
 " Show file stats
 set ruler
 
@@ -59,7 +62,7 @@ set encoding=utf-8
 
 " Whitespace
 set wrap
-set textwidth=79
+set textwidth=119
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
