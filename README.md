@@ -1,13 +1,27 @@
 # devkit
-Make sure you have `git` installed, then to clone this repo:
+
+To clone this repo:
+
 ```shell
 git clone https://github.com/nickwu241/devkit.git
 ```
 
-### Git
-Requires `git` to be installed.
+### Bash
+
+At the base of this repository, run:
+
 ```shell
-# Change these values as needed
+ln -s .aliases ~/.aliases
+ln -s .bash_profile ~/.bash_profile
+ln -s .bash_prompt ~/.bash_prompt
+```
+
+### Git
+
+Requirements: `git`
+
+```shell
+# Change these values as you see fit
 git config --global user.name "Nick Wu"
 git config --global user.email nickwu241@gmail.com
 
@@ -27,16 +41,20 @@ git config --global alias.brc '!git branch --merged | egrep -v "(^\*|master|dev)
 ```
 
 ### Vim
-Requires `git` and `vim` to be installed.
+
+Requirements: `git`, `vim`
+
 ```shell
 ./vim-setup.sh
 ```
 
 ### macOS
+
 ```shell
 ./macos/defaults.sh
 ./macos/brew-setup.sh
 ```
 
 ### Other
+
 My rough notes will be in [this gist](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
