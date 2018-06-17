@@ -1,27 +1,19 @@
 #!/bin/bash
 set -euo pipefail
-REPO_BASE="$(dirname "$0")"
 
-echo '[VIM SETUP] Starting...'
+echo 'Starting vim setup...'
 
-if [ -f ~/.vimrc ]; then
-    echo '[VIM SETUP] ERROR: .vimrc already exists. Delete it to use this setup.'
+if [ -f ~/.vimrc ] || [ -L ~/.vimrc ]; then
+    echo 'ERROR: .vimrc already exists. Delete it to use this setup.'
     exit 1
 fi
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
+git -C ~/.vim/bundle/Vundle.vim pull origin master
 
-cd ~/.vim/bundle/Vundle.vim && git pull origin master
-
-if [ ! -f ~/.vim/specific.vim ]; then
-    mkdir -p ~/.vim
-    touch ~/.vim/specific.vim
-    echo '[VIM SETUP] created ~/.vim/specific.vim'
-fi
-
-cd ~ && ln -s ${REPO_BASE}/.vimrc
+ln -s "$(dirname "$0")"/.vimrc ~/.vimrc
 vim +PluginInstall +qall
 
-echo '[VIM SETUP] Completed'
+echo 'Completed vim setup'

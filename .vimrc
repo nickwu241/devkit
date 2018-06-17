@@ -1,26 +1,33 @@
-" Don't try to be vi compatible
-set nocompatible
-
-" TODO: Pick a leader key
-let mapleader = ","
-
-function! RemoveTrailingSpaces()
+" Functions
+function! TrimTrail()
   %s/ \+$//g
 endfunction
 
-function! TabsOn(size)
+function! Ton(size)
   let &tabstop=a:size
   let &shiftwidth=a:size
   let &softtabstop=a:size
   set noexpandtab
 endfunction
 
-function! TabsOff(size)
+function! Toff(size)
   let &tabstop=a:size
   let &shiftwidth=a:size
   let &softtabstop=a:size
   set expandtab
 endfunction
+
+function! SourceIfExists(file)
+  if filereadable(expand(a:file))
+    exe 'source' a:file
+  endif
+endfunction
+
+" Don't try to be vi compatible
+set nocompatible
+
+" TODO: Pick a leader key
+let mapleader = ","
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -122,6 +129,5 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 set background=dark
 colorscheme solarized
 
-""" SPECIFIC OPTIONS
-source ~/.vim/specific.vim
-
+" Extra vim configuration
+call SourceIfExists("~/.vim/.vimrc-extra")
