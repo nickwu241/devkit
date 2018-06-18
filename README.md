@@ -11,9 +11,9 @@ git clone https://github.com/nickwu241/devkit.git
 At the base of this repository, run:
 
 ```shell
-ln -s .aliases ~/.aliases
-ln -s .bash_profile ~/.bash_profile
-ln -s .bash_prompt ~/.bash_prompt
+ln -s $(pwd)/.aliases ~/.aliases
+ln -s $(pwd)/.bash_profile ~/.bash_profile
+ln -s $(pwd)/.bash_prompt ~/.bash_prompt
 ```
 
 ### Git
