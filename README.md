@@ -4,7 +4,7 @@
 
 See [nickwu241/development-tips-and-tricks.md](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
 
-## Setup your Development Machine
+## Setup your Machine
 
 Clone this repo:
 
