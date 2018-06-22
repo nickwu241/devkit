@@ -1,6 +1,12 @@
-# devkit
+# Developer's Toolkit
 
-To clone this repo:
+## Development Tips and Tricks
+
+See [nickwu241/development-tips-and-tricks.md](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
+
+## Setup your Development Machine
+
+Clone this repo:
 
 ```shell
 git clone https://github.com/nickwu241/devkit.git
@@ -77,7 +83,3 @@ If you don't want to run `macos/defaults.sh`, you might want to just set:
 - [vimium](https://vimium.github.io): quick navigation and tab switching
 - [octotree](https://github.com/buunguyen/octotree): viewing Github repos like filesystem
 - [JSONViewer](https://github.com/teocci/JSONViewer-for-Chrome): viewing JSON data
-
-### Development Tips and Tricks
-
-See [nickwu241/development-tips-and-tricks.md](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
