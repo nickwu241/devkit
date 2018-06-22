@@ -13,7 +13,7 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 git -C ~/.vim/bundle/Vundle.vim pull origin master
 
-ln -s "$(dirname "$0")"/.vimrc ~/.vimrc
+ln -s "$(cd "$(dirname "$0")" ; pwd -P )"/.vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 echo 'Completed vim setup'
