@@ -78,6 +78,6 @@ System Preferences > Trackpad
 - [octotree](https://github.com/buunguyen/octotree): viewing Github repos like filesystem
 - [JSONViewer](https://github.com/teocci/JSONViewer-for-Chrome): viewing JSON data
 
-### Other
+### Development Tips and Tricks
 
-[this gist](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
+See [nickwu241/development-tips-and-tricks.md](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
