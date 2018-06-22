@@ -50,11 +50,34 @@ Requirements: `git`, `vim`
 
 ### macOS
 
+Note: look into these scripts to see what will change.
+
 ```shell
 ./macos/defaults.sh
+# Install applications and programs specified in macos/Brewfile
 ./macos/brew-setup.sh
 ```
 
+Consider installing `Android File Transfer`, `Google Drive` since there're no homebrew casks for these.
+
+If you don't want to run `macos/defaults.sh`, you might want to just set:
+
+System Preferences > Keyboard
+
+- Increase Key Repeat Rate
+- Decrease Delay Until Repeat
+
+System Preferences > Trackpad
+
+- Decrease Click
+- Increase Tracking speed
+
+### Chrome Extensions
+
+- [vimium](https://vimium.github.io): quick navigation and tab switching
+- [octotree](https://github.com/buunguyen/octotree): viewing Github repos like filesystem
+- [JSONViewer](https://github.com/teocci/JSONViewer-for-Chrome): viewing JSON data
+
 ### Other
 
-My rough notes will be in [this gist](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
+[this gist](https://gist.github.com/nickwu241/1abc77d7352c6252127f16a1af6ceb45).
