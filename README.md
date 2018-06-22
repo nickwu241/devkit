@@ -62,15 +62,15 @@ Consider installing `Android File Transfer`, `Google Drive` since there're no ho
 
 If you don't want to run `macos/defaults.sh`, you might want to just set:
 
-System Preferences > Keyboard
+- System Preferences > Keyboard
 
-- Increase Key Repeat Rate
-- Decrease Delay Until Repeat
+  - Increase Key Repeat Rate
+  - Decrease Delay Until Repeat
 
-System Preferences > Trackpad
+- System Preferences > Trackpad
 
-- Decrease Click
-- Increase Tracking speed
+  - Decrease Click
+  - Increase Tracking speed
 
 ### Chrome Extensions
 
