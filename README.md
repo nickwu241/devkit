@@ -20,6 +20,7 @@ At the base of this repository, run:
 ln -s $(pwd)/.aliases ~/.aliases
 ln -s $(pwd)/.bash_profile ~/.bash_profile
 ln -s $(pwd)/.bash_prompt ~/.bash_prompt
+mkdir -p ~/.devkit && ln -s $(pwd)/scripts ~/.devkit/bin
 ```
 
 ### Git
