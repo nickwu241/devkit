@@ -1,7 +1,5 @@
-tap "taskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/cask-versions"
-tap "homebrew/completions"
 tap "homebrew/core"
 
 brew "awscli"
