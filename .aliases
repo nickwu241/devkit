@@ -5,9 +5,10 @@ CODE_EDITOR=${CODE_EDITOR:-code-insiders}
 alias reload="exec ${SHELL} -l"
 
 # Quick Navigation
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias g="git"
+alias gd="cd ~/Google\ Drive"
 
 # Open currenty directory or given location
 function o() { if [ $# -eq 0 ]; then open .; else open "$@"; fi; }
@@ -20,7 +21,7 @@ function gdiff() { git diff --no-index --color-words "$@"; }
 
 # List Google Chrome bookmarks or open a bookmark by bookmark number
 function bm() {
-  if [ $# -eq 0 ]; then 
+  if [ $# -eq 0 ]; then
     jq -r '.roots.bookmark_bar.children[].name' ~/Library/Application\ Support/Google/Chrome/Default/Bookmarks | awk '{print NR-1 ": " $0}';
   else
     open `jq -r ".roots.bookmark_bar.children[$1].url" ~/Library/Application\ Support/Google/Chrome/Default/Bookmarks`;
