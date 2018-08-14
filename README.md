@@ -12,15 +12,18 @@ Clone this repo:
 git clone https://github.com/nickwu241/devkit.git
 ```
 
-### Bash
-
-At the base of this repository, run:
-
+Setup:
 ```shell
-ln -s $(pwd)/.aliases ~/.aliases
-ln -s $(pwd)/.bash_profile ~/.bash_profile
-ln -s $(pwd)/.bash_prompt ~/.bash_prompt
-mkdir -p ~/.devkit && ln -s $(pwd)/scripts ~/.devkit/bin
+# Set up vim, requires: git, vim
+./bootstrap-vim.sh
+# Set up git config and aliases, requires: git
+./git-config.sh
+# Install xcode CLI & apps from Brewfile and set up macOS defaults
+./macos/install.sh
+./macos/defaults.sh
+# Set symlinks to dotfiles & vscode settings
+# Alternatively, pick out anything you like from the dotfiles
+./create-links.sh
 ```
 
 ### Git
@@ -35,39 +38,27 @@ git config --global user.email nickwu241@gmail.com
 git config --global core.editor vim
 git config --global push.default current
 
-git config --global alias.br branch
+git config --global alias.b branch
 git config --global alias.co checkout
-git config --global alias.st 'status -s'
+git config --global alias.s 'status -s'
 git config --global alias.cm 'commit -m'
 git config --global alias.cam 'commit -am'
+git config --global alias.amend 'commit --amend --no-edit'
+git config --global alias.amende 'commit --amend'
 git config --global alias.sl 'log --oneline -n 10'
 git config --global alias.slo 'log --oneline'
 git config --global alias.diffc 'diff --cached'
 git config --global alias.pub '!git push origin $(git rev-parse --abbrev-ref HEAD)'
-git config --global alias.brc '!git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+git config --global alias.bc '!git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 ```
 
-### Vim
-
-Requirements: `git`, `vim`
-
-```shell
-./vim-setup.sh
-```
+Consider setting up SSH to Github: https://help.github.com/articles/connecting-to-github-with-ssh/
 
 ### macOS
 
-Note: look into these scripts to see what will change.
-
-```shell
-./macos/defaults.sh
-# Install applications and programs specified in macos/Brewfile
-./macos/brew-setup.sh
-```
-
 Consider installing `Android File Transfer`, `Google Drive` since there're no homebrew casks for these.
 
-If you don't want to run `macos/defaults.sh`, you might want to just set:
+Alternative to running [./macos/defaults.sh](https://github.com/nickwu241/devkit/blob/master/macos/bootstrap.sh), you might want to just set:
 
 - System Preferences > Keyboard
 

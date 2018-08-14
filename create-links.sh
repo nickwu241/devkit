@@ -1,7 +1,14 @@
 #!/bin/bash
+### Script to create symbolic links to stay sync'd
+
+# Get the absolute path of the respository root
+DIR=$(cd "$(dirname "$0")"; pwd -P)
+# macOS specific path, see https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations
+VSCODE_USER_SETTINGS_FILE="$HOME/Library/Application Support/Code - Insiders/User/settings.json"
+
 # Set up symlinks
-DIR=$(cd "$(dirname "$0")" ; pwd -P )
-ln -s $DIR/.aliases ~/.aliases
-ln -s $DIR/.bash_profile ~/.bash_profile
-ln -s $DIR/.bash_prompt ~/.bash_prompt
-mkdir -p ~/.devkit && ln -s $DIR/bin ~/.devkit/bin
+ln -s "$DIR/.aliases" ~/.aliases
+ln -s "$DIR/.bash_profile" ~/.bash_profile
+ln -s "$DIR/.bash_prompt" ~/.bash_prompt
+ln -s "$DIR/vscode/settings.json" "$VSCODE_USER_SETTINGS_FILE"
+mkdir -p ~/.devkit && ln -s "$DIR/bin" ~/.devkit/bin
