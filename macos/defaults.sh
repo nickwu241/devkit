@@ -74,12 +74,3 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # VSCode repeat keys for vim plugin in normal mode
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
-
-# Remap caps lock to esc
-# https://developer.apple.com/library/archive/technotes/tn2450/_index.html
-hidutil property --set '{
-    "UserKeyMapping": [{
-        "HIDKeyboardModifierMappingSrc": 0x700000039,
-        "HIDKeyboardModifierMappingDst": 0x700000029
-    }]
-}' &> /dev/null
