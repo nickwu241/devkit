@@ -1,2 +1,11 @@
 {
+    "window.zoomLevel": 0,
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "vim.disableExtension": false
 }
