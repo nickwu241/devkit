@@ -66,6 +66,7 @@ Alternative to running [./macos/defaults.sh](https://github.com/nickwu241/devkit
 
   - Increase Key Repeat Rate
   - Decrease Delay Until Repeat
+  - Modifier Keys > `Caps Lock` mapped to `Esc`
 
 - System Preferences > Trackpad
 
