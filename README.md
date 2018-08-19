@@ -24,6 +24,8 @@ Setup:
 # Set symlinks to dotfiles & vscode settings
 # Alternatively, pick out anything you like from the dotfiles
 ./create-links.sh
+# Install VSCode extensions, change 'code-insiders' to 'code' if using stable
+cat vscode/extensions.txt | xargs -L 1 code-insiders --install-extension
 ```
 
 ### Git
