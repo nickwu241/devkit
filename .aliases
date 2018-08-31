@@ -5,7 +5,12 @@ CODE_EDITOR=${CODE_EDITOR:-code-insiders}
 alias reload="exec ${SHELL} -l"
 
 # Quick Navigation
-alias d="cd ~/Dropbox"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias gd="cd ~/Google\ Drive"
