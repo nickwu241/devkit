@@ -18,6 +18,7 @@ brew "terraform"
 brew "wget"
 
 cask "android-file-transfer"
+cask "android-studio"
 cask "cloudapp"
 cask "docker"
 cask "dropbox"
