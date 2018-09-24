@@ -11,4 +11,4 @@ ln -s "$DIR/.aliases" ~/.aliases
 ln -s "$DIR/.bash_profile" ~/.bash_profile
 ln -s "$DIR/.bash_prompt" ~/.bash_prompt
 ln -s "$DIR/vscode/settings.json" "$VSCODE_USER_SETTINGS_FILE"
-mkdir -p ~/.devkit && ln -s "$DIR/bin" ~/.devkit/bin
+mkdir -p ~/.devkit && ln -s "$DIR/scripts" ~/.devkit/bin
