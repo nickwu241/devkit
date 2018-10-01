@@ -40,5 +40,6 @@ brew "python"
 brew "pipenv"
 brew "ruby"
 brew "terraform"
+brew "tree"
 brew "wget"
 
