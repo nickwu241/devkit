@@ -4,6 +4,13 @@ PATH=$HOME/bin:$PATH
 PATH=$HOME/.devkit/bin:$PATH
 export PATH
 
+# Keep bash history forever, append on each command.
+HISTSIZE=
+HISTFILESIZE=
+HISTCONTROL=ignoredups
+shopt -s histappend
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
