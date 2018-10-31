@@ -24,6 +24,7 @@ cask "spotify"
 # cask "visual-studio-code"
 cask "visual-studio-code-insiders"
 cask "whatsapp"
+cask "xquartz"
 
 brew "awscli"
 brew "bash"
