@@ -1,11 +1,16 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.settings.editor": "json",
+    "breadcrumbs.enabled": true,
     "editor.rulers": [
         80,
         120
     ],
-    "vim.disableExtension": false
+    "editor.lineNumbers": "relative",
+    "vim.disableExtension": false,
+    "python.jediEnabled": false,
+    "go.autocompleteUnimportedPackages": true
 }
