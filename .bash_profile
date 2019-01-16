@@ -5,7 +5,7 @@ PATH=$HOME/bin:$PATH
 PATH=$HOME/.devkit/bin:$PATH
 export PATH
 
-export GOPATH=$HOME/src
+export GOPATH=$HOME
 # Keep bash history forever, append on each command.
 HISTSIZE=
 HISTFILESIZE=
