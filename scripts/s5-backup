@@ -8,6 +8,6 @@ set -xeuo pipefail
 rsync -r -hv --progress ~/phone-now/ ~/Google\ Drive/S5-new
 
 # To check everything is sync'd, you should only see files in S5-new (previously sync'd)
-# diff -qr phone-now S5-new
+# diff -qr phone-now ~/Google\ Drive/S5-new
 
 # Then S5-new is also sync'd with Google Drive
