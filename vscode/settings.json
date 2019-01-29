@@ -1,16 +1,24 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.settings.editor": "json",
     "breadcrumbs.enabled": true,
+    "editor.formatOnSave": true,
     "editor.rulers": [
         80,
         120
     ],
     "editor.lineNumbers": "relative",
     "vim.disableExtension": false,
-    "python.jediEnabled": false,
-    "go.autocompleteUnimportedPackages": true
+    "go.autocompleteUnimportedPackages": true,
+    "cSpell.enabledLanguageIds": [
+        "json",
+        "latex",
+        "markdown",
+        "plaintext",
+        "text",
+        "yml"
+    ]
 }
