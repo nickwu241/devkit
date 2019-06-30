@@ -15,8 +15,9 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Set a fast mouse speed
-defaults write NSGlobalDomain com.apple.mouse.scaling -float 3
-defaults write NSGlobalDomain com.apple.trackpad.scaling -float 3
+# max mouse/trackpad speed from System Preferences UI is 3
+defaults write NSGlobalDomain com.apple.mouse.scaling -float 5
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 5
 
 # Set a fast keyboard repeat rate, note:
 # min KeyRepeat from System Preferences UI is 2
