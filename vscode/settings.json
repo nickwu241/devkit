@@ -1,24 +1,36 @@
 {
-    "window.zoomLevel": 0,
-    "files.autoSave": "afterDelay",
-    "files.trimTrailingWhitespace": true,
+    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.settings.editor": "json",
     "breadcrumbs.enabled": true,
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
     "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
     "editor.rulers": [
         80,
         120
     ],
-    "editor.lineNumbers": "relative",
-    "vim.disableExtension": false,
     "go.autocompleteUnimportedPackages": true,
-    "cSpell.enabledLanguageIds": [
-        "json",
-        "latex",
-        "markdown",
-        "plaintext",
-        "text",
-        "yml"
-    ]
+    // "cSpell.enabledLanguageIds": [
+    //     "json",
+    //     "latex",
+    //     "markdown",
+    //     "plaintext",
+    //     "text",
+    //     "yml"
+    // ],
+    "vim.disableExtension": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.suggestSelection": "first",
+    "vetur.format.defaultFormatter.html": "prettier",
+    "python.diagnostics.sourceMapsEnabled": false,
+    // "dart.previewFlutterUiGuides": true,
+    // "dart.previewFlutterUiGuidesCustomTracking": true,
 }
