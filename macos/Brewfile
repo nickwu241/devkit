@@ -1,5 +1,6 @@
 tap "homebrew/cask-versions"
 
+cask "alfred"
 cask "android-file-transfer"
 cask "android-studio"
 cask "arduino"
