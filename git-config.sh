@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 # Change these values as you see fit
 git config --global user.name "Nick Wu"
 git config --global user.email nickwu241@gmail.com
 
 git config --global core.editor vim
+git config --global pager.branch false
 git config --global push.default current
 
 git config --global alias.b branch

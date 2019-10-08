@@ -1,12 +1,3 @@
-# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
-PATH=/usr/local/bin:$PATH
-PATH=/usr/local/sbin:$PATH
-PATH=$HOME/flutter/bin:$PATH
-PATH=$HOME/flutter/bin/cache/dart-sdk/bin:$PATH
-PATH=$HOME/.devkit/bin:$PATH
-export PATH
-
-export GOPATH=$HOME
 # Keep bash history forever, append on each command.
 HISTSIZE=
 HISTFILESIZE=

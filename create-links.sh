@@ -10,6 +10,7 @@ VSCODE_USER_SETTINGS_FILE="$HOME/Library/Application Support/Code - Insiders/Use
 ln -s "$DIR/.aliases" ~/.aliases
 ln -s "$DIR/.bash_profile" ~/.bash_profile
 ln -s "$DIR/.bash_prompt" ~/.bash_prompt
+ln -s "$DIR/.path" ~/.path
 ln -s "$DIR/vscode/settings.json" "$VSCODE_USER_SETTINGS_FILE"
 mkdir -p ~/.config && ln -s "$DIR/.config/pycodestyle" ~/.config/pycodestyle
-mkdir -p ~/.devkit && ln -s "$DIR/scripts" ~/.devkit/bin
+mkdir -p ~/.devkit && ln -s "$DIR/scripts/" ~/.devkit/bin/

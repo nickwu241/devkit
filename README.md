@@ -13,6 +13,7 @@ git clone https://github.com/nickwu241/devkit.git
 ```
 
 Setup:
+
 ```shell
 # Set up vim, requires: git, vim
 ./bootstrap-vim.sh
@@ -38,6 +39,7 @@ git config --global user.name "Nick Wu"
 git config --global user.email nickwu241@gmail.com
 
 git config --global core.editor vim
+git config --global pager.branch false  
 git config --global push.default current
 
 git config --global alias.b branch
