@@ -58,6 +58,7 @@ brew "ruby"
 brew "terraform"
 brew "tree"
 # brew "wget"
+brew "zsh"
 
 # Flutter iOS simulator dependencies
 brew "usbmuxd"
