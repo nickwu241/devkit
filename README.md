@@ -30,9 +30,12 @@ Setup:
 cat vscode/extensions.txt | xargs -L 1 code-insiders --install-extension
 ```
 
-### Terminal Setup
+### Terminal
 - shell: https://github.com/ohmyzsh/ohmyzsh#basic-installation
 - theme: https://github.com/romkatv/powerlevel10k#oh-my-zsh
+
+### Git
+- https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/
 
 ### macOS
 
@@ -50,6 +53,13 @@ Alternative to running [./macos/defaults.sh](https://github.com/nickwu241/devkit
 
   - Decrease Click
   - Increase Tracking speed
+
+
+Manual:
+
+- System Preferences > Keyboard > Modifier Keys...
+  
+  - Cap Locks -> Esc
 
 ### Chrome Extensions
 
