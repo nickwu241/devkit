@@ -54,13 +54,6 @@ Alternative to running [./macos/defaults.sh](https://github.com/nickwu241/devkit
   - Decrease Click
   - Increase Tracking speed
 
-
-Manual:
-
-- System Preferences > Keyboard > Modifier Keys...
-  
-  - Cap Locks -> Esc
-
 ### Chrome Extensions
 
 - [vimium](https://vimium.github.io): quick navigation and tab switching
